@@ -1,0 +1,33 @@
+{
+  "name": "gulp-build",
+  "version": "1.0.0",
+  "description": "Frontend automation for new projects",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "npm i && bower i"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/Daedr",
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "browser-sync": "^2.17.5",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pngquant": "^1.0.10",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "gulp-watch": "^4.3.10",
+    "gulp-wiredep": "0.0.0",
+    "run-sequence": "^1.2.2"
+  }
+}

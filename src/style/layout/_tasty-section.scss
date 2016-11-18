@@ -1,0 +1,72 @@
+.tasty {
+  font-size: 0;
+  background: linear-gradient(to right, #c8c9c9 0%, #ebebeb 100%);
+}
+
+.tasty__left,
+.tasty__right {
+  display: inline-block;
+}
+
+.tasty__left {
+  width: 62%;
+  vertical-align: top;
+  padding: 115px 0 115px 70px;
+}
+
+.tasty__right {
+  width: 38%;
+  vertical-align: bottom;
+  padding-top: 65px;
+}
+
+.tasty__title {
+  margin-bottom: 30px;
+  color: #2b2f5f;
+}
+
+.tasty__desc {
+  width: 66%;
+  margin-bottom: 60px;
+  font-size: 15px;
+  color: $text-gray;
+}
+
+
+.advantages__list {
+  font-size: 0;
+}
+
+.advantages__item {
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.advantages__name {
+  font-family: malina;
+  text-align: left;
+  color: $text-gray;
+}
+
+.advantages__img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 28px;
+}
+
+.advantages__img-pic {
+  display: none;
+}
+
+.tasty__photo {
+  width: 383px;
+  height: 708px;
+  background-size: cover;
+}
+
+.tasty__photo-pic {
+  display: none;
+  width: 100%;
+}

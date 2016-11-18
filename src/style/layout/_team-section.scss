@@ -1,0 +1,274 @@
+.team {
+  padding-top: 80px;
+  padding-bottom: 115px;
+  background: radial-gradient(circle farthest-corner at 40% 40%,#fbfbfa,#c8c8c8);
+}
+
+.team__header {
+  font-size: 0;
+  margin-bottom: 40px;
+}
+
+.team__header-left {
+  width: 30%;
+  @include valign;
+}
+
+.team__title {
+  font-size: 64px;
+  color: $dark-blue;
+
+}
+
+.team__header-right {
+  width: 70%;
+  @include valign(middle);
+}
+
+.team__list {
+  font-size: 0;
+  padding-left: 50px;
+  text-align: justify;
+
+  &:after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+  }
+}
+
+.team__item {
+  width: 32%;
+  padding: 15px 30px 25px;
+  display: inline-block;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #893213;
+
+    .team__person-name {
+      color: $yellow;
+    }
+
+    .team__person-job {
+      color: #fff;
+    }
+  }
+}
+
+.team__item_active {
+  position: relative;
+  background-color: #893213;
+
+  .team__person-name {
+    color: $yellow;
+  }
+
+  .team__person-job {
+    color: #fff;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 13px solid transparent;
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-top-color: #893213;
+  }
+}
+
+.team__person {
+  display: block;
+}
+
+.team__person-name {
+  padding-bottom: 5px;
+  font-family: malina;
+  font-size: 30px;
+  line-height: 1.3;
+  color: $dark-blue;
+}
+
+.team__person-job {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  color: #8d8d8d;
+}
+
+.member__item {
+  display: none;
+  font-size: 0;
+}
+
+.member__item_active {
+  display: block;
+}
+
+.member__desc-left {
+  width: 25%;
+  position: relative;
+  @include valign;
+  padding-top: 30px;
+
+  &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 25px;
+    right: -115px;
+    width: 50px;
+    height: 40px;
+    background-image: url('../../img/icons/quote.png');
+  }
+}
+
+.member__desc-middle {
+  width: 45%;
+  @include valign(bottom);
+}
+
+.member__photo {
+  width: 440px;
+  height: 613px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 100%;
+}
+
+.member__photo-pic {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+
+.member__desc-right {
+  width: 30%;
+  @include valign;
+  padding-top: 30px;
+}
+
+.member__desc-left,
+.member__desc-right {
+
+  p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    color: $text-gray;
+  }
+}
+
+.team__footer {
+  padding: 0 120px;
+}
+
+.order {
+  position: relative;
+  background-color: radial-gradient(circle farthest-corner at 50% 30%, rgba(166,87,41,1) 0%, rgba(110,49,16,1) 100%);
+  background-image: url('../../img/team/order-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  font-size: 0;
+}
+
+.order__left,
+.order__right {
+  width: 50%;
+  @include valign(middle);
+}
+
+.order__left {
+  text-align: center;
+}
+
+.order__title {
+  font-size: 64px;
+  color: #fff;
+}
+
+.order__right {
+  background-color: rgba(29,29,32, 0.8);
+  padding: 40px 85px 40px 45px;
+  color: #fff;
+}
+
+.order-form {
+  font-size: 16px;
+}
+
+.order-form__field {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding:20px 0;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.callback-label {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.callback-label__check-hide {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+
+.callback-label__check-visible {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.callback-label__check-hide:checked {
+  & + .callback-label__check-visible {
+    background-image: url('../../img/icons/check.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.order__submit {
+  position: absolute;
+  right: -35px;
+  bottom: -35px;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  background-color: #ffb100;
+  background-image: url('../../img/icons/arrow.png');
+  background-size: auto;
+  background-position: 60%;
+  background-repeat: no-repeat;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #641a00;
+    background-image: url('../../img/icons/arrow-hover.png');
+  }
+}

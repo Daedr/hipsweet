@@ -1,0 +1,29 @@
+{
+  "name": "Alex",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "bachkalo <a.bachkalo@gmail.com>"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^1.12.4",
+    "normalize-css": "^5.0.0",
+    "jquery-mask-plugin": "^1.14.0",
+    "owl.carousel": "^2.2.0"
+  },
+  "overrides": {
+    "owl.carousel": {
+      "main": [
+        "dist/owl.carousel.min.js",
+        "dist/assets/owl.carousel.min.css",
+        "dist/assets/owl.theme.default.min.css"
+      ]
+    }
+  }
+}

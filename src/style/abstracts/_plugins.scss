@@ -1,0 +1,14 @@
+.owl-theme .owl-dots .owl-dot {
+  margin-right: 15px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: $yellow;
+}

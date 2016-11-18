@@ -1,0 +1,239 @@
+.main {
+  padding-bottom: 40px;
+  background: #d5393d;
+  background: radial-gradient(circle farthest-corner at 25% 80%,rgba(213, 57, 61, 0.95),rgba(163, 22, 27, 0.95));
+}
+
+.main-slider {
+  position: relative;
+  padding-top: 85px;
+  font-size: 0;
+}
+
+.slider__left,
+.slider__right,
+.slider__center {
+  @include valign;
+}
+
+.slider__left {
+  width: 13%;
+  padding-top: 45px;
+}
+
+.ingredients {
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.ingredients__menu {
+  display: block;
+  position: relative;
+  margin: 0 auto 20px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  background-image: url("./../../img/icons/header-sprite.png");
+  background-position: 0 -79px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $yellow;
+    background-position: 0 -120px;
+
+    .ingredients__dropdown {
+      display: block;
+    }
+  }
+}
+
+.ingredients__text {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.ingredients__dropdown {
+  display: none;
+  position: absolute;
+  min-width: 390px;
+  transform: translateY(-30%);
+  left: 95px;
+  padding: 25px 10px 25px 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  opacity: 0.92;
+  z-index: 10;
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 30%;
+    left: 0;
+    transform: translate(-100%);
+    border: 13px solid transparent;
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+    border-right-color: #fff;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 55px;
+    top: 0;
+    right: 100%;
+  }
+}
+
+.dropdown__item {
+  padding: 5px 0;
+  color: #575757;
+  font-size: 16px;
+  text-align: left;
+}
+
+.ingredients__pic,
+.ingredients__name,
+.ingredients__value {
+  @include valign(middle);
+}
+
+.ingredients__pic {
+  width: 30px;
+  height: 28px;
+  margin-right: 5px;
+  background-image: url("../../img/icons/ingr-dropdown-sprite.png");
+  background-repeat: no-repeat;
+}
+
+.ingredients__pic-flour {
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.ingredients__pic-egg {
+  background-size: cover;
+  background-position: 0 -22px;
+}
+
+.ingredients__pic-sugar {
+  background-size: cover;
+  background-position: 0 -47px;
+}
+
+.ingredients__pic-oil {
+  background-size: cover;
+  background-position: -2px -71px;
+}
+
+.ingredients__pic-milk {
+  background-size: cover;
+  background-position: 2px -96px;
+}
+
+.ingredients__name {
+  width: 65%;
+}
+
+.period {
+  text-align: center;
+}
+
+.period__title {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 13px;
+  color: rgba(255,255,255, 0.3);
+}
+
+.period__value {
+  font-family: malina;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.slider__center {
+  width: 50%;
+}
+
+.product__name {
+  position: absolute;
+  top: 34%;
+  left: 3%;
+  font-family: malina;
+  text-transform: uppercase;
+  font-size: 150px;
+  color: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+}
+
+.product__img {
+  position: relative;
+  bottom: 35px;
+  left: 23px;
+  width: 458px;
+  height: 515px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
+
+.product__img-pic {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+
+.slider__right {
+  width: 37%;
+  color: #fff;
+}
+
+.product-card {
+  padding-left: 5px;
+}
+
+.title {
+  margin-bottom: 25px;
+  font-size: 62px;
+  line-height: 1.2;
+  font-family: malina;
+}
+
+.product-card__desc {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.product-card__order-value {
+  margin-right: 45px;
+  @include valign(middle);
+  font-family: malina;
+  font-size: 62px;
+  line-height: 62px;
+}
+
+.product-card__order-btns {
+  @include valign(middle);
+}
+
+.btn {
+  display: block;
+  padding: 12px 23px;
+  border-radius: 25px;
+  background-color: $yellow;
+  color: #a4151c;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #641a00;
+    color: $yellow;
+  }
+}

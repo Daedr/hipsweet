@@ -1,0 +1,48 @@
+@mixin font-size($size) {
+  font-size: rem($size);
+}
+
+@mixin valign($value: top) {
+  display: inline-block;
+  vertical-align: $value;
+}
+
+@mixin desktop {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+@mixin tablets {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin phones {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
+
+%clearfix {
+  &::after,
+	&::before {
+    content: "";
+    display: block;
+
+  }
+	&::after {
+		clear: both;
+	}
+}
+
+%tacenter {
+	text-align: center;
+}
